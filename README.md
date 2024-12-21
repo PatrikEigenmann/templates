@@ -19,6 +19,16 @@ you're a c/c++ or a php or python developer, these templates cover a variaty of 
 
 ## Templates
 
+### bash.tpl
+
+```
+cd /projects/bash
+cdget.sh/cdget.cmd -b HelloPhpWorld
+```
+To get the shell-script start file, please cd in your project/bash folder and run the command above.
+A basic php file with the declare name will be copied into your bash-project folder, so you can start
+programming right away.
+
 ### php.tpl
 
 ```
