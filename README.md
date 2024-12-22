@@ -94,7 +94,7 @@ programming right away.
 To use these scripts in your project, simply clone the repository and include the necessary files in your PHP project:
 
 ```
-git clone https://github.com/PatrikEigenmann/python.git
+git clone https://github.com/PatrikEigenmann/templates.git
 ```
 
 ## License
