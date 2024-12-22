@@ -69,6 +69,16 @@ To get the php start file, please cd in your project/php folder and run the comm
 php file with the declared name will be copied into your php-project folder, so you can start
 programming right away.
 
+### www-php.tpl
+
+```
+cd ~/{projects}/www
+cdget.sh/cdget.cmd -wphp Hello-www-Php-World
+```
+To get the php start file, please cd in your project/www folder and run the command above. A basic
+php file with the declared name will be copied into your php-project folder, so you can start
+programming right away.
+
 ### python.tpl
 
 ```
