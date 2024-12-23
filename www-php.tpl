@@ -14,9 +14,9 @@
 
 $title = "Title of the Script";
 $description = "PHP Tutorial";
-$charset = "UTF-8"
+$charset = "UTF-8";
 $keywords = "PHP, HTML, CSS, XML, JavaScript";
-$author = "Patrik Eigenmann (p.eigenmann@gmx.net)"
+$author = "Patrik Eigenmann (p.eigenmann@gmx.net)";
 $css_file = "/css/php_styles.php";
 
 ?>
