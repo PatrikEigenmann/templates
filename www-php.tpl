@@ -38,9 +38,28 @@ $root_path = $cls_config->Get("absolut_path");
 $extractor = new CMetadataExtractor($root_path);
 $metadataList = $extractor->listFilesWithMetadata();
 
+$rowspan = 6;
+
 ?>
 <html>
     <?=$cls_page->renderHeader(); ?>
     <body>
+        <table style="width:700px">
+            <tr>
+                <td><img src="<?=$cls_config->Get("img_server_path")?>/bk_pixel.png;" width="233" height="1" alt="" /></td>
+                <td><img src="<?=$cls_config->Get("img_server_path")?>/bk_pixel.png;" width="467" height="1" alt="" /></td>
+            </tr><tr>
+                <td>&nbsp;</td>
+                <td><h1>Option 1 implicit function call</h1></td>
+            </tr><tr>
+                <td rowspan="<?=$rowspan; ?>">
+                <?php
+                    foreach($metadataList as $metadata)
+                        echo "<a href=\"".$metadata["filename"]."\">".$metadata["link_name"]."</a><br />\n";
+                ?>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
     </body>
 </html>
