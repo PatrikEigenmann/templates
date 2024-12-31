@@ -1,43 +1,46 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
 <?php
-// **************************************************************************************
-// <webscript.php> - <description>
-// --------------------------------------------------------------------------------------
-// Author:		Patrik Eigenmann
-// eMail:		p.eigenmann@gmx.net
-// --------------------------------------------------------------------------------------
-// Changel Log:
-// DAY YYYY-MM-DD File created.                                             Version:00.01
-// --------------------------------------------------------------------------------------
-// To Do's:
-// **************************************************************************************
+/**
+ * Link name: 
+ * Description: !
+ */
+// Include all library and classes
+include_once("libs/CConfig.php");
+include_once("libs/CPage.php");
+include_once("libs/CMetadataExtractor.php");
 
-$title = "Title of the Script";
-$description = "PHP Tutorial";
-$charset = "UTF-8";
-$keywords = "PHP, HTML, CSS, XML, JavaScript";
-$author = "Patrik Eigenmann (p.eigenmann@gmx.net)";
-$css_file = "/css/php_styles.php";
+// Create the config instance
+$cls_config = CConfig::GetInstance();
+
+// Give this page a title
+$cls_config->Set("title", "Welcome to my Development Server");
+
+// This should be a description of Page
+$description = "";
+$description .= " ";
+$description .= " ";
+$description .= " ";
+$description .= " ";
+$description .= " ";
+$description .= " ";
+$description .= " ";
+$cls_config->Set("description", $description);
+
+// This should be the keywords of the Page
+$keywords = "HTML programming language, PHP programming language, XML programming language,";
+$keywords .= " JavaScript programming language, CSS programming language, SQL programming language,";
+$keywords .= " Apache Webserver, MySQL Database Server, Fullstack Developing services, CMS Content";
+$keywords .= " Management Systems, Web portals";
+$cls_config->Set("keywords", $keywords);
+$cls_page = new CPage(0, "index.php");
+
+$root_path = $cls_config->Get("absolut_path");
+$extractor = new CMetadataExtractor($root_path);
+$metadataList = $extractor->listFilesWithMetadata();
 
 ?>
 <html>
-    <head>
-        <?
-        if(isset($title))
-            echo "<title>$title</title>";
-        if(isset($description))
-            echo "<meta name=\"description\" content=\"$description\" />";
-        if(isset($charset))
-            echo "<meta charset=\"$charset\">";
-        if(isset($keywords))
-            echo "<meta name=\"keywords\" content=\"$keywords\" />";
-        if(isset($author))
-            echo "<meta name=\"author\" content=\"$author\">";
-        echo "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">";
-        if(isset($css_file))
-            echo "<link rel=\"stylesheet\" href=\"$css_file\">";
-        ?>
-    </head>
+    <?=$cls_page->renderHeader(); ?>
     <body>
     </body>
 </html>
