@@ -2,7 +2,7 @@
 <?php
 /**
  * Link name: 
- * Description: !
+ * Description: 
  */
 // Include all library and classes
 include_once("libs/CConfig.php");
