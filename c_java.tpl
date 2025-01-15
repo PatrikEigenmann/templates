@@ -5,7 +5,7 @@
  * make sure there are no typos. Compile and link the c program, and your good to go.
  *
  * Here are the compile instructions:
- * clang/gcc <name>.c -o <name>
+ * clang/gcc <name>.c -o <name>.bin
  * pmake <name>.makefile
  * -----------------------------------------------------------------------------------
  * Author:       Patrik Eigenmann
@@ -31,8 +31,8 @@ int main (int argc, char **argv) {
 
     // calling the java virtual machine on command
     // line level but also hide the command line promt.
-    // Windows:             "> NUL 2>&1" to hide the command prompt.
-    // Linux/Unix/MacOS:    "> /dev/null 2>&1" to hide the command promt.
-    system("java -classpath \"D:\\Development\\Java\\Samael;.\" <name> > /dev/null 2>&1");
+    // Windows:             "java -classpath \"D:\\Development\\Java\\Samael:.\" <name> > /dev/null 2>&1"
+    // Linux/Unix/MacOS:    "java -classpath \"/Users/patrik/Development/Java/Samael:.\" <name> > /dev/null 2>&1"
+    system("java -classpath \"/Users/patrik/Development/Java/Samael:.\" <name> > /dev/null 2>&1");
     return 0;
 }
