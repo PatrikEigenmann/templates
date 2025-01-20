@@ -6,7 +6,10 @@
 # manually run each step. This automation makes the development process faster and reduces the
 # chance of errors.
 # ------------------------------------------------------------------------------------------------
-# Author: Patrik Eigenmann (p.eigenmann@gmx.net)
+# Author: Patrik Eigenmann 
+# eMail:  p.eigenmann@gmx.net
+# GitHub: www.github.com/PatrikEigenmann/cpp
+# GitHub: www.github.com/PatrikEigenmann/Java
 # ------------------------------------------------------------------------------------------------
 # Change Log:
 # DAY YYYY-MM-DD File created.                                                      Version: 00.01

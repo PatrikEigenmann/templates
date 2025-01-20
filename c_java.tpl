@@ -8,12 +8,13 @@
  * clang/gcc <name>.c -o <name>.bin
  * pmake <name>.makefile
  * -----------------------------------------------------------------------------------
- * Author:       Patrik Eigenmann
- * eMail:        p.eigenmann@gmx.net
+ * Author: Patrik Eigenmann
+ * eMail:  p.eigenmann@gmx.net
+ * GitHub: www.github.com/PatrikEigenmann/Java
  * -----------------------------------------------------------------------------------
  * Change Log:
  * DAY YYYY-MM-DD File created.                                         Version: 00.01
- * ***********************************************************************************/
+ * *********************************************************************************** */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -33,6 +34,6 @@ int main (int argc, char **argv) {
     // line level but also hide the command line promt.
     // Windows:             "java -classpath \"D:\\Development\\Java\\Samael:.\" <name> > /dev/null 2>&1"
     // Linux/Unix/MacOS:    "java -classpath \"/Users/patrik/Development/Java/Samael:.\" <name> > /dev/null 2>&1"
-    system("java -classpath \"/Users/patrik/Development/Java/Samael:.\" <name> > /dev/null 2>&1");
+    system("java -classpath \"/Users/patrik/Development/Java/Samael:.\" <name>");
     return 0;
 }
