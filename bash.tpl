@@ -4,6 +4,7 @@
 # ----------------------------------------------------------------------------------------------------
 # Author: 	Patrik Eigenmann
 # eMail: 	p.eigenmann@gmx.net
+# GitHub: 	www.github.com/PatrikEigenmann/bash
 # ----------------------------------------------------------------------------------------------------
 # Change Log:
 # <day>	<date> File created.															Version: 00.01
