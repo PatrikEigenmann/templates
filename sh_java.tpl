@@ -12,3 +12,7 @@ MAIN_CLASS="MainClass"
 
 # Start the program
 java -cp "$CLASSPATH" $MAIN_CLASS
+
+# In case of starting a Jar File
+#cd /Users/patrik/bin || exit   # set the active working directory
+#java -jar {name}.jar          # start the jar file
