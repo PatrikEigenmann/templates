@@ -1,8 +1,9 @@
 /* *******************************************************************************************
- * <header.H> - <description>
+ * {file_name} - <description>
  * -------------------------------------------------------------------------------------------
- * Author:       Patrik Eigenmann
- * eMail:        p.eigenmann@gmx.net
+ * Author:  Patrik Eigenmann
+ * eMail:   p.eigenmann@gmx.net
+ * GitHub:  www.github.com/PatrikEigenmann/cpp
  * -------------------------------------------------------------------------------------------
  * DAY YYYY-MM-DD File created.                                                 Version: 00.01
  * -------------------------------------------------------------------------------------------

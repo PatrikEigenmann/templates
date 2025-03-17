@@ -1,12 +1,10 @@
 /* ***********************************************************************************
- * <filename>.c - Starter Programm to run a Java application.
- * Please rename all <filename> tags with the actual name of the java class, replace
- * <day> and <date> with the actual day (3 letter word) and date (Format YYYY-MM-DD),
- * make sure there are no typos. Compile and link the c program, and your good to go.
+ * {file_name} - Starter Programm to run a Java application.
+ * This Program puts a string together of a java virtual machine call.
  *
  * Here are the compile instructions:
- * clang/gcc <filename>.c -o <filename>.bin
- * pmake <filename>.makefile
+ * clang/gcc {file_name} -o {project_name}.bin
+ * pmake {project_name}.makefile
  * -----------------------------------------------------------------------------------
  * Author: Patrik Eigenmann
  * eMail:  p.eigenmann@gmx.net
@@ -34,6 +32,6 @@ int main (int argc, char **argv) {
     // line level but also hide the command line promt.
     // Windows:             "java -classpath \"D:\\Development\\Java\\Samael:.\" <filename> > /dev/null 2>&1"
     // Linux/Unix/MacOS:    "java -classpath \"/Users/patrik/Development/Java/Samael:.\" <filename> > /dev/null 2>&1"
-    system("java -classpath \"/Users/patrik/Development/Java/Samael:.\" <filename>");
+    system("java -classpath \"/Users/patrik/Development/Java/Samael:.\" {project_name}");
     return 0;
 }

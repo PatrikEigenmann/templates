@@ -1,9 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
 <?php
 /**
- * Link name: 
+ * Link name: {file_name}
  * Description: 
  */
+
 // Include all library and classes
 include_once("libs/CConfig.php");
 include_once("libs/CPage.php");

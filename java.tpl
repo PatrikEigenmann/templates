@@ -1,12 +1,12 @@
 /* -------------------------------------------------------------------------------------------
- * <filename>.java - 
+ * {file_name} - <description>
  * -------------------------------------------------------------------------------------------
  * Author:  Patrik Eigenmann
  * eMail:   p.eigenmann@gmx.net
  * GitHub:  www.github.com/PatrikEigenmann/Java
  * -------------------------------------------------------------------------------------------
  * Change Log:
- * DAY 2025-MM-DD File created.                                                 Version: 01.00
+ * DAY YYYY-MM-DD File created.                                                 Version: 01.00
  * ------------------------------------------------------------------------------------------- */
 
 // Import your libraries here!
@@ -14,7 +14,7 @@
 /**
  *
  */
-class <filename> {
+class {project_name} {
 
     /**
      * The main method serves as the entry point for the application. It initializes and

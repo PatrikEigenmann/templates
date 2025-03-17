@@ -1,9 +1,9 @@
 /* *******************************************************************************************
- * <c program.c> - <description>
+ * {file_name} - <description>
  *
  * Compile instructions:
- * gcc/clang <c program.c> -o <c program>
- * pmake <c program>.makefile
+ * gcc/clang {file_name} -o {project_name}
+ * pmake {project_name}.makefile
  * -------------------------------------------------------------------------------------------
  * Author:  Patrik Eigenmann
  * eMail:   p.eigenmann@gmx.net
