@@ -1,10 +1,10 @@
 # -----------------------------------------------------------------------------------------------
-# makefile for the tool pmake. pmake is a tool that reads instructions you give it about how to
-# use a compiler of your choice and then automatically runs the compiler to build your software
-# projects. Imagine it as a smart assistant that knows exactly how to compile and prepare all
-# the pieces of your software, ensuring everything fits together correctly without you having to
-# manually run each step. This automation makes the development process faster and reduces the
-# chance of errors.
+# {file_name} - This file is the makefile for the tool pmake for the project {project_name}.
+# pmake is a tool that reads instructions you give it about how to use a compiler of your choice
+# and then automatically runs the compiler to build your software projects. Imagine it as a smart
+# assistant that knows exactly how to compile and prepare all the pieces of your software, ensuring
+# everything fits together correctly without you having to manually run each step. This automation
+# makes the development process faster and reduces the chance of errors.
 # ------------------------------------------------------------------------------------------------
 # Author: Patrik Eigenmann 
 # eMail:  p.eigenmann@gmx.net
@@ -43,7 +43,7 @@ target=exec
 # is not specified, pmake assumes the corresponding .c file has the same name as the project directive.
 # This automatic association streamlines the build process by aligning the project name with its main 
 # source file when no specific source files are defined.
-project={project}
+project={project_name}
 
 # The `src` directive specifies the source files that require compilation. If the `src` directive is
 # left empty, `pmake` assumes that the corresponding `.c` file shares the same name as the project
