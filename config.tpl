@@ -18,7 +18,7 @@
 	-->
 	<!--
 	<parameter name="db.file">mydb.db</parameter>
-	<parameter name="db.connection">jdbs:sqlite:mydb.db</parameter>
+	<parameter name="db.connection">jdbc:sqlite:mydb.db</parameter>
 	<parameter name="db.user">root</parameter>
 	<parameter name="db.password">password</parameter>
 	-->
