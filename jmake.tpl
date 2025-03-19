@@ -14,11 +14,11 @@
 # DAY YYYY-MM-DD File created.                                                      Version: 00.01
 # ------------------------------------------------------------------------------------------------
 
-# The compiler used for compiling the project is essential. Commonly, GCC is employed for Windows
-# due to its robustness and prevalence in open-source development. On MacOS, Clang is preferred
-# for its speed and advanced diagnostics. These compilers translate source code into executable
-# binaries, ensuring compatibility and optimized performance across different operating systems.
-# comp=clang
+# The java compiler used for compiling the project is essential. Whatever version of jre your system
+# has installed, that is the standard java compiler. If you're into developing software, the chance
+# is high that you installed your prefered jdk and you adjusted the path environment variable. So,
+# most of the times there is nothing to do with this directive, but with in some legacy and compatibility
+# situations, you might want to adjust the standard java complier with javac=/path/to/your/jdk/bin/javac.
 javac=
 
 # The 'classpath' directive specifies the classpath -cp string. If the 'classpath' directive is empty,
