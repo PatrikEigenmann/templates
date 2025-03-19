@@ -1,10 +1,8 @@
 # -----------------------------------------------------------------------------------------------
-# {file_name} - This file is the makefile for the tool jmake for the project {project_name}.
-# jmake is a tool that reads instructions you give it about how to use a java compiler of your choice
-# and then automatically runs the compiler to build your software projects. Imagine it as a smart
-# assistant that knows exactly how to compile and prepare all the pieces of your software, ensuring
-# everything fits together correctly without you having to manually run each step. This automation
-# makes the development process faster and reduces the chance of errors.
+# {file_name} - This makefile is for jmake, a tool designed for the {project_name} project. jmake
+# simplifies building your software by automatically running the Java compiler of your choice.
+# Think of it as a smart assistant that ensures all the pieces of your project come together
+# perfectly, saving you time and minimizing errors.
 # ------------------------------------------------------------------------------------------------
 # Author: Patrik Eigenmann 
 # eMail:  p.eigenmann@gmx.net
@@ -14,26 +12,22 @@
 # DAY YYYY-MM-DD File created.                                                      Version: 00.01
 # ------------------------------------------------------------------------------------------------
 
-# The java compiler used for compiling the project is essential. Whatever version of jre your system
-# has installed, that is the standard java compiler. If you're into developing software, the chance
-# is high that you installed your prefered jdk and you adjusted the path environment variable. So,
-# most of the times there is nothing to do with this directive, but with in some legacy and compatibility
-# situations, you might want to adjust the standard java complier with javac=/path/to/your/jdk/bin/javac.
+# The Java compiler is key for building the project. By default, the system's standard Java compiler 
+# (based on the installed JRE) is used. Most developers set their preferred JDK and update the PATH 
+# variable. Usually, no changes are needed here, but for legacy or compatibility reasons, you can 
+# specify a custom compiler with javac=/path/to/your/jdk/bin/javac.
 javac=
 
-# The 'classpath' directive specifies the classpath -cp string. If the 'classpath' directive is empty,
-# Adding the current folder "." is common practice to add to the classpath. To define project specific
-# classpath's, there are different methods to achieve that. Either all paths are followed of the classpath=.
-# with the indicator that the classpath is at the end by a empty line or # end of classpath, or and external
-# file "classpath.txt" can be used to define the libraries in the class path like
-# classpath=@classpath.txt 
+# The 'classpath' directive defines the classpath (-cp string). If left empty, adding the current 
+# folder "." is common practice. For project-specific classpaths, you can either list all paths 
+# ending with an empty line or "# end of classpath," or use an external file like 
+# classpath=@classpath.txt to specify libraries.
 classpath=.
 /Users/patrik/Development/Java/Samael
 # end of classpath
 
-# The `src` directive specifies the source files that require compilation. If the `src` directive is
-# left empty, `jmake` assumes that all the code files in the active folder need to be compiled "*.java"
-# for complex projects with sub-directories, please use the @source.txt in this directive. jmake will
-# automatically perform a recursive find -name *.java and stores the findings in the defined text file.
-# after the compilation, the text file will be deleted as a clean up process.
+# The `src` directive specifies source files for compilation. If left empty, `jmake` compiles all 
+# "*.java" files in the current folder. For projects with sub-directories, use @source.txt. `jmake` 
+# will recursively find all "*.java" files, save them to the text file, and delete it after compilation 
+# as part of the cleanup process.
 src=@source.txt
