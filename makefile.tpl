@@ -55,4 +55,4 @@ src=
 # files are properly included in the build process to guarantee successful compilation and linking
 # of the project.
 # libs=../mylibs/cVersion.c ../mylibs/cManPage.c ../mylibs/cProgress.c
-libs=
+libs=-lncurses
